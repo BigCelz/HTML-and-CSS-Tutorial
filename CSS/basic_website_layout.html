@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basi website layout</title>
+    <style>
+        header {
+            background-color: hsl(0, 8%, 66%);
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+        }
+
+        /* if you prefer a horizontal navbar, take the step below */
+        .navbar li {
+            float: left;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            background-color: hsl(0, 3%, 23%);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar {
+            background-color: hsl(0, 8%, 17%);
+            height: 50px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        aside {
+            width: 20%;
+            float: left;
+            padding: 10px;
+        }
+
+        section {
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+
+        article {
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: hsl(0, 8%, 66%);
+            text-align: center;
+            padding: 25px;
+            display: block;
+            clear: both;
+        }
+
+        /* to make the element fall on top of each other when in a mobile view, we add; */
+        @media screen and(max-width:600px) {
+
+            aside,
+            section,
+            article {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Basic Website Layout</h1> -->
+    <!-- <p><b>Semantic tags:</b> Semantic tags keep the content 
+    organized, they are better for search engine optimization [S.E.O], and they assist
+    with screen readers and other technology for accessibility. They include; header, nav, main, section, 
+    aside article, footer.</p> -->
+
+    <!-- creating a semantic tag -->
+    <header>
+        <h2> My Website</h2>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>This is the aside</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet libero optio minus voluptates
+                doloremque facilis est cupiditate eaque minima unde inventore rem in exercitationem soluta pariatur,
+                laborum debitis nihil at.</p>
+        </aside>
+
+        <section>
+            <h2>this is a section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic consequuntur, quos quis qui
+                doloremque velit similique nemo aliquam illum, nulla provident vitae illo quo. Iure, saepe? Soluta,
+                ipsam voluptatum?</p>
+        </section>
+
+        <article>
+            <h2>This is an article</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit consectetur provident, eaque nisi itaque
+                facilis vel harum, voluptatibus pariatur vero iste non maiores placeat doloribus reprehenderit
+                repudiandae sequi voluptas aliquam!</p>
+        </article>
+    </main>
+
+    <footer>
+        <h2>This is a footer</h2>
+    </footer>
+</body>
+
+</html>

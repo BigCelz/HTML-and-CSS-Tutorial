@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo elements</title>
+    <style>
+        h2::first-letter{font-size: 2em; font-style: italic; color: rgb(4, 4, 117);}
+        p::first-line{background-color: yellow;}
+
+        /* to add checkmark before fruits */
+        #fruits li::before{content: ✔;}
+
+        #apple::after{content: 🍏;}
+        #orange::after{content: 🍊;}
+        #banana::after{content: 🍌;}
+
+        /* to change the marker of a list */
+        #fruits li::marker{content: ✔; color: green;
+        font-size: 1.2em;}
+
+    </style>
+  </head>
+  <body>
+    <h1>pseudo elements</h1>
+    <p>
+      these are keyword added after a selector that are used to style as
+      specific part of an element
+    </p>
+
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+      accusantium placeat nostrum rem id iure eius ipsam magnam repellat libero
+      quidem recusandae ipsum cum nesciunt, dolore odio, sit voluptatibus?
+    </p>
+    <ul id="fruits">
+      <li id="apple">apple</li>
+      <li id="orange">orange</li>
+      <li id="banana">banana</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes</title>
+    <style>
+      a:link {
+        color: green;
+      }
+      a:hover {
+        color: rgb(148, 148, 162);
+      }
+      a:active {
+        font-size: 1.1em;
+        color: blue;
+      }
+      a:visited {
+        color: grey;
+      }
+      li:hover {
+        background-color: yellow;
+      }
+
+      /* there is also the "not pseudo classes" which does the opposite of pseudo */
+      li:not(:hover) {
+        background-color: rgb(177, 163, 163);
+      }
+
+      /* nth child pseudo class */
+      li:nth-child(odd) {
+        background-color: rgb(190, 132, 24);
+      }
+      #greeting p {
+        background-color: #add8e6;
+        padding: 10px;
+      }
+      #greeting {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>pseudo classes</h1>
+    <a href="https://google.com">Google</a>
+    <hr />
+
+    <h3>example 2</h3>
+    <ul>
+      <li>this is #1</li>
+      <li>this is #2</li>
+      <li>this is #3</li>
+    </ul>
+    <hr />
+
+    <h3>example 3</h3>
+    <!-- i want the "hello" hidden until i hover over my div element -->
+
+    <div id="greeting">
+      <p>Hello</p>
+    </div>
+  </body>
+</html>

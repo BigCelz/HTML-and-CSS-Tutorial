@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>User Details</h1>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="spongbob123"
+      /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="5"
+      /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="123@mail.com" /><br />
+
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <br />
+
+      <label for="bday">Birthday:</label>
+      <input type="date" id="bday" /> <br />
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="0" max="99" value="1" />
+      <br /><br />
+
+      <!-- radio buttons -->
+      <label for="title">Title:</label>
+      <label for="mr.">Mr.</label>
+      <input type="radio" id="mr." value="Mr." name="title" />
+
+      <label for="mrs.">Mrs.</label>
+      <input type="radio" id="mrs." value="Mrs." name="title" /><br />
+
+      <label for="payment">Payment:</label>
+      <!-- we will use the select button to choose different payment options -->
+      <select id="payment">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="giftcard">Giftcard</option>
+        <option value="crypto">Crypto Currency</option></select
+      ><br />
+
+      <!--for checkbox-->
+      <label for="subscribe">Subscribe</label>
+      <input type="checkbox" id="subscribe" /><br />
+
+      <!--for textarea-->
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="3" cols="25"></textarea><br />
+
+      <!-- for file -->
+      <label for="file">File:</label>
+      <input type="file" id="file" name="file" accept="image/png, image/jpg" />
+    </form>
+  </body>
+</html>

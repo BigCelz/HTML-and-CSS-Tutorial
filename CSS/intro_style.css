@@ -1,0 +1,10 @@
+body{background-color: rgb(42, 35, 35);}
+p{color: white;}
+
+#p1{color: rgb(35, 145, 35);}
+#p2{color: rgb(227, 57, 57);}
+#p3{color: rgb(238, 238, 59);}
+#p4{color: rgb(76, 76, 242);}
+
+.odd{color: rgb(91, 55, 55);}
+.even{color: rgb(195, 173, 48);}

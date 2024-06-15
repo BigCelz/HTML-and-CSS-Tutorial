@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>combinators</title>
+    <style>
+      #container {
+        border: 2px solid;
+      }
+
+      /* styling using desendants */
+      #container p {
+        background-color: rgb(235, 235, 42);
+      }
+
+      /* styling using child */
+      #container + p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>combinators</h1>
+    <p>explains the relationship between listed selectors</p>
+
+    <div id="container">
+      <p>this is #1</p>
+      <p>this is #2</p>
+      <div>
+        <p>this is #3</p>
+      </div>
+    </div>
+    <p>this is #4</p>
+    <p>this is #5</p>
+  </body>
+</html>

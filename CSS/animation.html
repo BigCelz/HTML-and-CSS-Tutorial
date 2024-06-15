@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      #box {
+        width: 250px;
+        height: 250px;
+        background-color: hsl(0, 9%, 68%);
+        text-align: center;
+        font-size: 13em; animation-name: sliderRight; 
+        animation-duration: 5s; animation-iteration-count: 2;
+      }
+
+      /* to create animations, we use keyframe rules */
+
+      /* to create animation to slide left */
+      /* @keyframes slideLeft{
+        from{transform: translateX(300%);}
+      } */
+
+      /* to create animation to slide right */
+    @keyframes slideRight {
+        to{transform:translateX(300%)}
+    }
+    </style>
+  </head>
+  <body>
+    <div id="box">Hi</div>
+    
+   
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+    <style>
+      .pagination {
+        text-align: center;
+      }
+      .pagination a {
+        color: black;
+        text-decoration: none;
+        padding: 8px 15px;
+        display: inline-block;
+      }
+
+      /* to style pagination, we add a class to be active */
+      .pagination a.active {
+        background-color: rgb(250, 110, 82);
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      /* to style non active pagination */
+      .pagination a:hover:not(.active) {
+        background-color: gainsboro;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this page is the homepage</h1>
+    <p>
+      Method by which a document is seperated into pages and numbers are given
+    </p>
+    <div class="pagination">
+      <a href=""><</a>
+      <a class="active" href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+      <a href="">></a>
+    </div>
+  </body>
+</html>
